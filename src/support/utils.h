@@ -1,6 +1,7 @@
 #pragma once
 
 #include "views/surface/isurface.h"
+#include "widgets/feedbacktoolbutton.h"
 #include <QString>
 #include <QStringList>
 #include <redasm/redasm.h>
@@ -21,7 +22,7 @@ inline QList<QByteArray> kb_search_paths; // C compatibility
 QString to_hex_addr(RDAddress address, const RDSegment* seg = nullptr);
 QString confidence_text(RDConfidence c);
 QMenu* create_surface_menu(ISurface* surface);
-QToolButton* create_screenshot_button(QWidget* w);
+FeedbackToolButton* create_screenshot_button(QWidget* w);
 QPixmap get_logo();
 bool handle_key_press(ISurface* surface, QKeyEvent* e);
 void configure_hex_input(QLineEdit* le);
