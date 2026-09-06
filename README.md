@@ -172,6 +172,10 @@ Yes, this repo contains only the GUI, it's still the main repo for historical re
 REDasm engine lives in [core](https://github.com/redasm-dev/core) repo and contains what's needed
 to analyze binaries and load plugins.
 
+**Does REDasm support scripting?**  
+A Python plugin API is planned.  
+Today, extensions are written in C.
+
 **What happened to version 3?**  
 Retired because of technical debt and engine limitations, version 4 is a complete plain C rewrite 
 with a more powerful and fast analysis engine.
